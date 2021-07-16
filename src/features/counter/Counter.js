@@ -7,15 +7,19 @@ import {
   incrementAsync,
   incrementIfOdd,
   selectCount,
+  selectStatus,
 } from './counterSlice';
 import styles from './Counter.module.css';
 
 export function Counter() {
   const count = useSelector(selectCount);
+  const status = useSelector(selectStatus);
   const dispatch = useDispatch();
   const [incrementAmount, setIncrementAmount] = useState('2');
 
   const incrementValue = Number(incrementAmount) || 0;
+
+  console.log(status)
 
   return (
     <div>

@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
+import Component from './features/nested-components/Component';
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
             React Redux
           </a>
         </span>
+        <Component />
       </header>
     </div>
   );
